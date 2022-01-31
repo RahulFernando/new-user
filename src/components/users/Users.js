@@ -48,7 +48,7 @@ const Users = (props) => {
   }
 
   return (
-    <div>
+    <>
       <AddNewUser
         onCancel={modalCancelHandler}
         error={error}
@@ -57,7 +57,7 @@ const Users = (props) => {
         eventListenHandler={eventListenHandler}
       />
       <UserList users={users} />
-    </div>
+    </>
   );
 };
 
